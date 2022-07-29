@@ -3,10 +3,10 @@ preload: false
 ---
 
 <style>
-.slidev-vclick-prior {
+.click_section_05.slidev-vclick-prior {
   display: none;
 }
-.slidev-vclick-current {
+.click_section_05.slidev-vclick-current {
   display: block;
 }
 </style>
@@ -15,7 +15,7 @@ preload: false
 
 <v-clicks>
 
-<div>
+<div class="click_section_05">
 
 ### Boolean
 
@@ -34,7 +34,7 @@ numeric = getFlag();
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### Number
 
@@ -55,7 +55,7 @@ decimal = foo; // error: Type 'number' is not assignable to type 'bigint'.
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### String
 
@@ -75,7 +75,7 @@ x3 = 'other'; // ok
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### Symbol
 
@@ -93,7 +93,7 @@ console.log(Object.keys(a)) // <= []
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### Array
 
@@ -103,7 +103,7 @@ const extendedList: Array<number> = [...list, 4];
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### Tuple
 
@@ -120,7 +120,7 @@ someStr = list[1];
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### Enum
 
@@ -151,7 +151,7 @@ enum BooleanLikeHeterogeneousEnum {
 ```
 </div>
 
-<div>
+<div class="click_section_05">
 
 ### Null & Undefined
 

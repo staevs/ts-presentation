@@ -35,4 +35,24 @@ src: ./slides/06_type_aliases.md
 ---
 src: ./slides/07_interfaces.md
 ---
+
+---
+src: ./slides/08_special_types.md
+---
+
+---
+src: ./slides/09_function_types.md
+---
+
+---
+src: ./slides/10_union_types.md
+---
+
+---
+src: ./slides/11_intersection_types.md
+---
+
+---
+src: ./slides/12_type_narrowing.md
+---
  

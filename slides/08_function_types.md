@@ -1,6 +1,0 @@
----
-preload: false
----
-
-## Functions
-
