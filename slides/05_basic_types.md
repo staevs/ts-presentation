@@ -153,15 +153,30 @@ enum BooleanLikeHeterogeneousEnum {
 
 <div class="click_section_05">
 
-### Null & Undefined
+### Enum Alternatives
 
 ```ts
-const a: string | null = null;
-const b: undefined = undefined;
+enum StatusCode {
+  ErrorCode = 404,
+  SuccessCodeUpdated = 200
+}
 
-// Non-null Assertion Operator (Postfix!)
-// No error reported
-a!.toUpperCase();
+
+const STATUS_CODE = {
+  ErrorCode: 404,
+  SuccessCode: 200
+} as const;
+
+
+type StatusCodeObj = typeof STATUS_CODE[keyof typeof STATUS_CODE];
+
+const statusResponse: StatusCode = StatusCode.ErrorCode;
+const statusResponseObj: StatusCodeObj  = STATUS_CODE.ErrorCode;
+
+function logger(code: StatusCodeObj) {}
+
+logger(200); // <= ok
+logger(300);// Error: Argument of type '300' is not assignable to parameter of type 'StatusCodeObj'.
 ```
 
 

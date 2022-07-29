@@ -55,4 +55,8 @@ src: ./slides/11_intersection_types.md
 ---
 src: ./slides/12_type_narrowing.md
 ---
+
+---
+src: ./slides/13_resources.md
+---
  
