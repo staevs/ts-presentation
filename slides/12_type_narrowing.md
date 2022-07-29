@@ -95,4 +95,34 @@ function logger(shapes: Shape[]){
 
 </div>
 
+<div class="click_section_12">
+
+```ts
+type FormA = {
+    a: string,
+    b?: never,
+    type: 'type1'
+}
+
+type FormB = {
+    a?:never;
+    b: string;
+    type: 'type2'
+}
+
+function logger(form: FormA | FormB) {
+    if (form.type === 'type1') {
+        form.a = 'str';
+        form.b = 'str'; // Error: Type '"str"' is not assignable to type 'undefined'.
+    }
+
+    if (form.type === 'type2') {
+        form.a = 'str'; // Error: Type '"str"' is not assignable to type 'undefined'.
+        form.b = 'str';
+    }
+}
+```
+
+</div>
+
 </v-clicks>
